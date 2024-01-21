@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../asset/images/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0 8%;
+  position: relative;
+}
+
+.container .logo {
+  width: 120px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.container .content {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+}
+
+.container .content h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.container .content h1 span {
+  color: #ff3753;
+}
+
+.container button {
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  padding: 12px 25px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.container button img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.container .launch-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .launch-time div {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+
+.container .launch-time div p {
+  font-size: 60px;
+  margin-bottom: -14px;
+}
+
+.container .rocket {
+  width: 210px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  -webkit-animation: rocket 4s linear infinite;
+          animation: rocket 4s linear infinite;
+}
+
+@-webkit-keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
+}
+
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
